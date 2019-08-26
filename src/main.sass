@@ -1,0 +1,41 @@
+@import 'variables'
+
+body
+    background-color: #F2F2F2
+
+.no-wrap
+    white-space: nowrap
+
+.card
+    border-radius: 0
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1)
+    border: none
+
+pre
+    white-space: pre-wrap
+
+a
+    color: lighten($blue, 25%)
+
+.btn-icon
+    max-width: 22px
+.btn-sm
+    padding: 3px 5px
+
+.btn-primary
+    background-color: $blue
+    border-color: $blue
+    &:hover
+        background-color: darken($blue, 10%)
+        border-color: darken($blue, 10%)
+    &:active
+        background-color: darken($blue, 10%) !important
+        border-color: darken($blue, 10%)     !important
+
+@keyframes rotate
+    from { transform: rotate(0deg)   }
+    to   { transform: rotate(360deg) }
+
+img.loading-icon
+    position: relative
+    animation: 1.5s rotate infinite linear
